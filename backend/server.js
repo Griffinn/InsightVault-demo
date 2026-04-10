@@ -6,7 +6,8 @@ import { wishlistApiRouter } from "./routes/wishlistApi.js"
 import { dashboardApiRouter } from "./routes/dashboardApi.js"
 import { fileURLToPath } from 'node:url'
 
-const PORT = 8000
+// const PORT = 8000
+const PORT = process.env.PORT || 3000; //for render aaaa
 const app = express()
 
 const __filename = fileURLToPath(import.meta.url)
@@ -30,6 +31,10 @@ app.use((req, res) => {
 });
  
 
-app.listen(PORT, () => {
-    console.log(`Server listening on port ${PORT}`)
-})
+// app.listen(PORT, () => {
+//     console.log(`Server listening on port ${PORT}`)
+// })
+
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server is running on port ${PORT}`);
+});
