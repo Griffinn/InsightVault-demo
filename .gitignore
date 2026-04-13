@@ -1,5 +1,3 @@
-node_modules/
-# Ignore the SQLite database file
+node_modules
+.env
 database.db
-# Also ignore any journal files created by SQLite
-database.db-journal
