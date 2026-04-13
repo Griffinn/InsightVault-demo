@@ -7,7 +7,7 @@ import { dashboardApiRouter } from "./routes/dashboardApi.js"
 import { fileURLToPath } from 'node:url'
 
 // const PORT = 8000
-const PORT = process.env.PORT || 3000; //for render aaaa
+const PORT = process.env.PORT || 8000; //for render aaaa
 const app = express()
 
 const __filename = fileURLToPath(import.meta.url)
