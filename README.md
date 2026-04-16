@@ -49,3 +49,87 @@ InsightVault utilizes a modern, decoupled client-server architecture designed fo
 4.  **SQL Execution:** The Controller builds a dynamic SQL query, utilizing the database engine to perform sorting, filtering, and aggregating.
 5.  **JSON Response:** The backend returns a structured JSON object containing the results and metadata (like total count for pagination).
 6.  **DOM Update:** The frontend receives the data, clears existing UI elements, and maps the new data into the DOM.
+
+### RESTful API Documentation
+
+| Endpoint | Method | Params/Query | Description |
+| :--- | :--- | :--- | :--- |
+| `/api/transactions` | GET | `page`, `limit`, `category`, `type`, `search`, `startDate`, `endDate` | Returns paginated transactions based on active filters. |
+| `/api/transactions` | POST | JSON Body | Validates and creates a new transaction record. |
+| `/api/reports/totals` | GET | `startDate`, `endDate` | Aggregates income/expense totals for dashboard metrics. |
+| `/api/reports/categories` | GET | `type`, `startDate`, `endDate` | Provides grouped data for pie chart visualization. |
+| `/api/wishlist` | GET | - | Retrieves savings goals and computed progress. |
+
+## Tech Stack
+
+* **Frontend:** HTML5, CSS3 (Grid/Flexbox), Vanilla JavaScript (ES6+), Bootstrap 5, Chart.js.
+* **Backend:** Node.js, Express.js.
+* **Database:** SQLite3 (Dev), Turso/libSQL (Prod).
+* **Hosting:** Vercel (Frontend), Turso (Managed Database).
+
+## Key Design Decisions
+
+### 1. The "Vanilla+" Choice (Why No React?)
+I chose to avoid frameworks to ensure my skills were built on a solid foundation. By building the "React way" (component-based thinking) but using Vanilla tools, I gained a deeper appreciation for state management, re-rendering logic, and optimized DOM updates. This demonstrates an understanding of the technology the tools are built upon, not just the tools themselves.
+
+### 2. Strategic Pivot to SQLite (Portability)
+I opted for SQLite3 for its exceptional portability. The database is a single file within the project, meaning reviewers can clone the repo and run it instantly without complex DB setups. This file-based approach also made the migration to Turso (Cloud SQLite) seamless for production readiness.
+
+### 3. Computation Offloading (Backend-First)
+I made a conscious architectural decision to perform all data "heavy lifting" on the backend. By using SQL for grouping and summing data, I keep the frontend lightweight. This ensures the app remains fast even on lower-end mobile devices, as the client only renders final results.
+
+## 🚧 Project Status
+
+This project is currently in **Active Development (Beta)**.
+
+* **Working:** Full-stack loop, API routing, database persistence, SQL aggregation logic, analytics dashboard, and core filtering engine.
+* **Fine-Tuning:** Polishing mobile responsiveness for complex tables and finalizing UI error boundaries for the wishlist system.
+
+## Future Improvements
+
+* **Authentication & Security:** Implementing JWT-based user authentication to allow multiple private user profiles.
+* **Predictive Analytics:** Developing a backend service that uses historical data to predict future spending patterns.
+* **Data Export:** Adding functionality to export financial summaries as PDF or CSV files for external record-keeping.
+
+## Setup Instructions
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Griffinn/InsightVault-demo.git](https://github.com/Griffinn/InsightVault-demo.git)
+    cd InsightVault-demo
+    ```
+2.  **Install dependencies:**
+    ```bash
+    cd backend
+    npm install
+    ```
+3.  **Environment Setup:** Create a `.env` file in `backend/` and add your database credentials (or rely on the local `database.sqlite` if applicable):
+    ```env
+    TURSO_DATABASE_URL=your_turso_database_url
+    TURSO_AUTH_TOKEN=your_turso_auth_token
+    ```
+4.  **Run the application:**
+    ```bash
+    node server.js
+    ```
+5.  **Access the Dashboard:** Open your browser to `http://localhost:8000`
+
+## Folder Structure
+
+```text
+├── backend/ # Express.js Server Environment
+│ ├── controllers/ # Business logic & SQL query aggregation
+│ ├── routes/ # REST API endpoint definitions
+│ ├── db/ # Database connection logic (Turso/SQLite)
+│ ├── middleware/ # Custom error handling & logging
+│ ├── utils/ # Helper functions for data formatting
+│ └── server.js # Main entry point for the backend server
+├── frontend/ # Presentation Layer & Client Logic
+│ ├── css/ # Modern CSS Grid & Flexbox layouts
+│ ├── js/ # Modular Vanilla JS (Charts, UI modules, API logic)
+│ ├── pages/ # Semantic HTML structures for sub-pages
+│ ├── assets/ # Project images, icons, and static assets
+│ └── index.html # Main landing dashboard / SPA Entry
+├── .gitignore # Version control exclusions
+└── database.sqlite # Portable SQLite file for local testing
+```
