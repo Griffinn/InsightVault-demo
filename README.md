@@ -1,6 +1,20 @@
 # InsightVault - Personal-Finance-Analytics-Platform
 
 A full-stack personal finance intelligence platform for structured data management and interactive visual analytics.
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge)
+![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
+![Turso](https://img.shields.io/badge/Turso-4FF8D2?style=for-the-badge)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Vercel](https://img.shields.io/badge/Frontend-Vercel-black?style=for-the-badge&logo=vercel)
+![Backend](https://img.shields.io/badge/Backend-Node.js-green?style=for-the-badge)
+![Database](https://img.shields.io/badge/Database-Turso-blue?style=for-the-badge)
+![Project](https://img.shields.io/badge/Project-FullStack-blueviolet?style=for-the-badge)
+![API](https://img.shields.io/badge/API-REST-orange?style=for-the-badge)
+![Charts](https://img.shields.io/badge/Data-Visualization-important?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active%20Development-yellow?style=for-the-badge)
 
 
 ## Project Overview
