@@ -133,3 +133,27 @@ This project is currently in **Active Development (Beta)**.
 ├── .gitignore # Version control exclusions
 └── database.sqlite # Portable SQLite file for local testing
 ```
+
+## Screenshots / Demo
+
+### 🖥️ Desktop Dashboard
+![Dashboard Overview](https://via.placeholder.com/800x450?text=InsightVault+Main+Dashboard)
+*Main dashboard showing the transaction summary and navigation.*
+
+### 📊 Analytics & Reports
+![Analytics View](https://via.placeholder.com/800x450?text=Charts+and+Reports+View)
+*Real-time data visualization using Chart.js based on filtered SQL queries.*
+
+### 📱 Mobile Responsiveness
+| Mobile Dashboard | Transaction List |
+| :---: | :---: |
+| ![Mobile 1](https://via.placeholder.com/200x400?text=Mobile+UI) | ![Mobile 2](https://via.placeholder.com/200x400?text=Mobile+List) |
+| *Fully responsive CSS Grid layout* | *Optimized for smaller screens* |
+
+## Live Demo
+
+[Explore the Live Deployment](https://insight-vault-demo.vercel.app/)
+
+## Closing Note
+
+InsightVault is a deep dive into full-stack architecture. By focusing on data flow and architecture over framework dependency, I’ve built a system that is robust and data-driven from the ground up.
