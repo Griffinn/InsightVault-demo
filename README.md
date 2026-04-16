@@ -2,9 +2,11 @@
 
 A full-stack personal finance intelligence platform for structured data management and interactive visual analytics.
 
+
 ## Project Overview
 
 InsightVault transforms raw financial data into meaningful insights through a robust client-server architecture. Instead of just storing transactions, the platform structures financial data, aggregates totals using complex backend queries, and converts the results into real-time visual representations. It solves the problem of basic expense tracking by providing a highly scalable, multi-user environment where users can filter large datasets, analyze spending trends over time, and manage targeted savings goals—all through a seamlessly responsive dashboard.
+
 
 ## Objective / Motivation
 
@@ -13,6 +15,7 @@ While modern frameworks are powerful, they often abstract away the foundational 
 * **Mastering the Fundamentals:** Learning to manage the Document Object Model (DOM), event-driven rendering, and complex CSS layout engines (Grid/Flexbox) without relying on heavy frontend abstractions like React.
 * **System Design & Communication:** Replicating enterprise-grade backend communication by creating an API-driven environment that handles state, data aggregation, and persistent relational storage.
 * **Data Integrity & Architecture:** Building a clean, decoupled architecture where a modular frontend communicates strictly via a RESTful Node.js API to a SQL database.
+
 
 ## Features
 
@@ -35,6 +38,7 @@ While modern frameworks are powerful, they often abstract away the foundational 
 ### 4. Wishlist System (Savings Goals)
 * **Goal Tracking:** Set targets for future purchases or savings milestones.
 * **Interactive Progress UI:** High-visibility progress bars and goal cards provide immediate visual gratification as users move closer to their targets.
+
 
 ## System Architecture & Data Flow
 
@@ -60,12 +64,14 @@ InsightVault utilizes a modern, decoupled client-server architecture designed fo
 | `/api/reports/categories` | GET | `type`, `startDate`, `endDate` | Provides grouped data for pie chart visualization. |
 | `/api/wishlist` | GET | - | Retrieves savings goals and computed progress. |
 
+
 ## Tech Stack
 
 * **Frontend:** HTML5, CSS3 (Grid/Flexbox), Vanilla JavaScript (ES6+), Bootstrap 5, Chart.js.
 * **Backend:** Node.js, Express.js.
 * **Database:** SQLite3 (Dev), Turso/libSQL (Prod).
 * **Hosting:** Vercel (Frontend), Turso (Managed Database).
+
 
 ## Key Design Decisions
 
@@ -78,6 +84,7 @@ I opted for SQLite3 for its exceptional portability. The database is a single fi
 ### 3. Computation Offloading (Backend-First)
 I made a conscious architectural decision to perform all data "heavy lifting" on the backend. By using SQL for grouping and summing data, I keep the frontend lightweight. This ensures the app remains fast even on lower-end mobile devices, as the client only renders final results.
 
+
 ## 🚧 Project Status
 
 This project is currently in **Active Development (Beta)**.
@@ -85,11 +92,13 @@ This project is currently in **Active Development (Beta)**.
 * **Working:** Full-stack loop, API routing, database persistence, SQL aggregation logic, analytics dashboard, and core filtering engine.
 * **Fine-Tuning:** Polishing mobile responsiveness for complex tables and finalizing UI error boundaries for the wishlist system.
 
+
 ## Future Improvements
 
 * **Authentication & Security:** Implementing JWT-based user authentication to allow multiple private user profiles.
 * **Predictive Analytics:** Developing a backend service that uses historical data to predict future spending patterns.
 * **Data Export:** Adding functionality to export financial summaries as PDF or CSV files for external record-keeping.
+
 
 ## Setup Instructions
 
@@ -114,6 +123,7 @@ This project is currently in **Active Development (Beta)**.
     ```
 5.  **Access the Dashboard:** Open your browser to `http://localhost:8000`
 
+
 ## Folder Structure
 
 ```text
@@ -133,6 +143,7 @@ This project is currently in **Active Development (Beta)**.
 ├── assets/                                  Project images, icons, and static assets
 
 ```
+
 
 ## Screenshots / Demo
 
@@ -164,9 +175,11 @@ Reports
 | ![Mobile 1](https://via.placeholder.com/200x400?text=Mobile+UI) | ![Mobile 2](https://via.placeholder.com/200x400?text=Mobile+List) |
 | *Fully responsive CSS Grid layout* | *Optimized for smaller screens* |
 
+
 ## Live Demo
 
 [Explore the Live Deployment](https://insight-vault-demo.vercel.app/)
+
 
 ## Closing Note
 
