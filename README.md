@@ -1,6 +1,7 @@
 # InsightVault - Personal-Finance-Analytics-Platform
 
-A full-stack personal finance intelligence platform for structured data management and interactive visual analytics.
+A full-stack personal finance intelligence platform for structured data management and interactive visual analytics. 
+<br>
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge)
 ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
