@@ -1,4 +1,4 @@
-# InsightVault
+# InsightVault - Personal-Finance-Analytics-Platform
 
 A full-stack personal finance intelligence platform for structured data management and interactive visual analytics.
 
