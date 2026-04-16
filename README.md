@@ -3,7 +3,7 @@
 A full-stack personal finance intelligence platform for structured data management and interactive visual analytics.
 
 
-## 📌 Project Overview
+## Project Overview
 
 InsightVault is a comprehensive full-stack personal finance management platform designed to empower users with the tools to track, analyze, and optimize their financial behavior. Unlike traditional expense trackers that offer static lists, InsightVault treats financial data as a dynamic asset. The platform transforms raw, unorganized transaction data into high-level intelligence through a robust client-server architecture.
 
@@ -11,7 +11,7 @@ By structuring data into intuitive categories and types (Income vs. Expense), th
 
 
 
-## 🎯 Objective / Motivation
+## Objective / Motivation
 
 The primary motivation behind InsightVault was to strip away the "magic" of modern frontend frameworks and confront the core challenges of web engineering head-on.
 
@@ -224,19 +224,19 @@ This project is currently in **Active Development (Beta)**.
 
 ### Desktop Dashboard
 
-Dashboard
+### Dashboard
 ![Dashboard Overview](assets/Dashboard.png)
 *Main dashboard showing the transaction summary, quick navigation, and overall financial health at a glance.*
 
-Transactions
+### Transactions
 ![Screenshot of the Transactions](assets/Transactions.png)
 *Detailed transaction log featuring backend-driven pagination and multi-dimensional filtering by category and date.*
 
-Wishlist
+### Wishlist
 ![Screenshot of the Wishlist](assets/Wishlist.png)
 *Savings goal tracker with interactive progress bars to visualize milestones for future purchases.*
 
-Reports
+### Reports
 ![Screenshot of the Reports](assets/Reports1.png)
 *Dynamic analytics engine using Chart.js to visualize spending distribution and income trends over time.*
 
