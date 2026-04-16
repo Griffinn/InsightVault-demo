@@ -117,28 +117,42 @@ This project is currently in **Active Development (Beta)**.
 ## Folder Structure
 
 ```text
-├── backend/ # Express.js Server Environment
-│ ├── controllers/ # Business logic & SQL query aggregation
-│ ├── routes/ # REST API endpoint definitions
-│ ├── db/ # Database connection logic (Turso/SQLite)
-│ ├── middleware/ # Custom error handling & logging
-│ ├── utils/ # Helper functions for data formatting
-│ └── server.js # Main entry point for the backend server
-├── frontend/ # Presentation Layer & Client Logic
-│ ├── css/ # Modern CSS Grid & Flexbox layouts
-│ ├── js/ # Modular Vanilla JS (Charts, UI modules, API logic)
-│ ├── pages/ # Semantic HTML structures for sub-pages
-│ ├── assets/ # Project images, icons, and static assets
-│ └── index.html # Main landing dashboard / SPA Entry
-├── .gitignore # Version control exclusions
-└── database.sqlite # Portable SQLite file for local testing
+├── backend/                                 Express.js Server Environment
+│ ├── controllers/                           Business logic & SQL query aggregation
+│ ├── routes/                                REST API endpoint definitions
+│ ├── db/                                    Database connection logic (Turso/SQLite)
+│ ├── middleware/                            Custom error handling & logging
+│ ├── utils/                                 Helper functions for data formatting
+│ └── server.js                              Main entry point for the backend server
+├── frontend/                                Presentation Layer & Client Logic
+│ ├── css/                                   Modern CSS Grid & Flexbox layouts
+│ ├── js/                                    Modular Vanilla JS (Charts, UI modules, API logic)
+│ ├── pages/                                 Semantic HTML structures for sub-pages
+│ └── index.html                             Main landing dashboard / SPA Entry
+├── .gitignore                               Version control exclusions
+├── assets/                                  Project images, icons, and static assets
+
 ```
 
 ## Screenshots / Demo
 
 ### 🖥️ Desktop Dashboard
-![Dashboard Overview](https://via.placeholder.com/800x450?text=InsightVault+Main+Dashboard)
-*Main dashboard showing the transaction summary and navigation.*
+
+Dashboard
+![Dashboard Overview](assets/Dashboard.png)
+*Main dashboard showing the transaction summary, quick navigation, and overall financial health at a glance.*
+
+Transactions
+![Screenshot of the Transactions](assets/Transactions.png)
+*Detailed transaction log featuring backend-driven pagination and multi-dimensional filtering by category and date.*
+
+Wishlist
+![Screenshot of the Wishlist](assets/Wishlist.png)
+*Savings goal tracker with interactive progress bars to visualize milestones for future purchases.*
+
+Reports
+![Screenshot of the Reports](assets/Reports1.png)
+*Dynamic analytics engine using Chart.js to visualize spending distribution and income trends over time.*
 
 ### 📊 Analytics & Reports
 ![Analytics View](https://via.placeholder.com/800x450?text=Charts+and+Reports+View)
