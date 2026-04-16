@@ -9,6 +9,7 @@ A full-stack personal finance intelligence platform for structured data manageme
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+<br>
 ![Vercel](https://img.shields.io/badge/Frontend-Vercel-black?style=for-the-badge&logo=vercel)
 ![Backend](https://img.shields.io/badge/Backend-Node.js-green?style=for-the-badge)
 ![Database](https://img.shields.io/badge/Database-Turso-blue?style=for-the-badge)
