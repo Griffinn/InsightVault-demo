@@ -3,7 +3,7 @@
 A full-stack personal finance intelligence platform for structured data management and interactive visual analytics.
 
 
-## Project Overview
+## 📌 Project Overview
 
 InsightVault is a comprehensive full-stack personal finance management platform designed to empower users with the tools to track, analyze, and optimize their financial behavior. Unlike traditional expense trackers that offer static lists, InsightVault treats financial data as a dynamic asset. The platform transforms raw, unorganized transaction data into high-level intelligence through a robust client-server architecture.
 
@@ -11,7 +11,7 @@ By structuring data into intuitive categories and types (Income vs. Expense), th
 
 
 
-## Objective / Motivation
+## 🎯 Objective / Motivation
 
 The primary motivation behind InsightVault was to strip away the "magic" of modern frontend frameworks and confront the core challenges of web engineering head-on.
 
@@ -22,7 +22,7 @@ The primary motivation behind InsightVault was to strip away the "magic" of mode
 * **Data Integrity & Architecture:** I aimed to practice clean architecture principles by ensuring a strict separation of concerns. This project demonstrates my ability to build a modular system where the frontend acts purely as a presentation layer, while the backend maintains the "Source of Truth" through a secured relational database.
 
 
-## Features
+## ⚙️ Features
 
 ### 1. Transaction Management & Persistence
 * **Full CRUD Lifecycle:** Seamlessly add, view, update, and delete financial records.
@@ -81,7 +81,7 @@ InsightVault utilizes a modern, decoupled client-server architecture designed fo
 | `/api/wishlist` | GET | - | Retrieves savings goals and computed progress. |
 
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 * **Frontend:** HTML5, CSS3 (Grid/Flexbox), Vanilla JavaScript (ES6+), Bootstrap 5, Chart.js.
 * **Backend:** Node.js, Express.js.
@@ -98,7 +98,7 @@ I chose to build the frontend using HTML, CSS, and Vanilla JavaScript specifical
 * **Event Architecture:** Coordinating complex user interactions and data updates across modular files.
 * **State Management:** Developing custom patterns to ensure the UI remains synced with backend data.
 * **Modern CSS:** Utilizing Grid and Flexbox for layouts to avoid heavy framework dependencies.
-👉 *This decision ensures that I understand the "how" and "why" behind the tools used in modern web engineering.*
+*This decision ensures that I understand the "how" and "why" behind the tools used in modern web engineering.*
 
 ### 2. Strategic Pivot to SQLite (Portability)
 I opted for SQLite3 for its exceptional portability. The database is a single file within the project, meaning reviewers can clone the repo and run it instantly without complex DB setups. This file-based approach also made the migration to Turso (Cloud SQLite) seamless for production readiness.
@@ -131,13 +131,13 @@ Initially implemented with local SQLite for rapid prototyping, the project was m
 * **Portability & Deployment:** Switching to Turso allows for a distributed cloud database that integrates seamlessly with Vercel while maintaining SQLite's lightweight compatibility.
 * **Remote Accessibility:** Eliminates the dependency on local files, making the platform accessible from any location.
 
-## 🌉 Deployment & System Integration
+## Deployment & System Integration
 * **Vercel Deployment:** Leverages a global edge network for static assets.
 * **Turso Integration:** Transitions local file storage to a managed, edge-distributed cloud database.
 * **System Simulation:** Mimics enterprise infrastructure by decoupling the presentation, logic, and data layers.
 
 
-## 🚧 Project Status
+## Project Status
 
 This project is currently in **Active Development (Beta)**.
 
@@ -151,31 +151,31 @@ This project is currently in **Active Development (Beta)**.
 
 ## Future Improvements & Roadmap
 
-### 🤖 Next-Gen Evolution (React & AI)
+### Next-Gen Evolution (React & AI)
 * **React Transformation:** Rebuilding the UI in React to implement a more sophisticated state management layer and enhanced component reusability.
 * **AI Predictive Analytics:** Developing a backend service that utilizes historical data to predict future spending patterns and offer personalized financial advice.
 
-### 🔐 Security & Multi-User Support
+### Security & Multi-User Support
 * **User Authentication:** Implementing JWT-based authentication to support private user profiles and secure data isolation.
 * **CORS & Middleware Optimization:** Refining server-side security middleware for strict cross-origin request management.
 
-### 📊 Advanced Data Features
+### Advanced Data Features
 * **Export Functionality:** Adding the ability to export financial summaries and transaction history as formatted PDF or CSV files.
 * **Extended Temporal Analysis:** Implementing "Month-over-Month" and custom-range comparisons across all reporting modules.
 * **Investment & Credit Cards:** Dedicated expansion modules for managing credit card balances and tracking investment portfolios.
 
-### 🎨 UI/UX & Mobile
+### UI/UX & Mobile
 * **Viewport Optimization:** Adjusting fluid container logic to ensure a premium look at 100% browser zoom (fixing current 80% zoom bias).
 * **Mobile App Wrapper:** Exploring the use of Capacitor to wrap the responsive web app into a native mobile experience.
 * **Transaction Deep-Dives:** Adding "Expandable Details" to the transaction table for viewing advanced metadata.
 
-### 🏗️ Technical Scaling
+### Technical Scaling
 * **PostgreSQL Migration:** Transitioning to a high-concurrency relational database for enterprise-grade scalability.
 * **Polished Interaction:** Removing UI artifacts (search bar focus outlines) and refining navigation active-state tracking.
 
 
 
-## Setup Instructions
+## 📦 Setup Instructions
 
 1.  **Clone the Repository:**
     ```bash
@@ -199,7 +199,7 @@ This project is currently in **Active Development (Beta)**.
 5.  **Access the Dashboard:** Open your browser to `http://localhost:8000`
 
 
-## Folder Structure
+## 📂 Folder Structure
 
 ```text
 ├── backend/                                 Express.js Server Environment
@@ -222,7 +222,7 @@ This project is currently in **Active Development (Beta)**.
 
 ## Screenshots / Demo
 
-### 🖥️ Desktop Dashboard
+### Desktop Dashboard
 
 Dashboard
 ![Dashboard Overview](assets/Dashboard.png)
@@ -240,18 +240,18 @@ Reports
 ![Screenshot of the Reports](assets/Reports1.png)
 *Dynamic analytics engine using Chart.js to visualize spending distribution and income trends over time.*
 
-### 📊 Analytics & Reports
+### Analytics & Reports
 ![Analytics View](https://via.placeholder.com/800x450?text=Charts+and+Reports+View)
 *Real-time data visualization using Chart.js based on filtered SQL queries.*
 
-### 📱 Mobile Responsiveness
+### Mobile Responsiveness
 | Mobile Dashboard | Transaction List |
 | :---: | :---: |
 | ![Mobile 1](https://via.placeholder.com/200x400?text=Mobile+UI) | ![Mobile 2](https://via.placeholder.com/200x400?text=Mobile+List) |
 | *Fully responsive CSS Grid layout* | *Optimized for smaller screens* |
 
 
-## Live Demo
+## 🌐 Live Demo
 
 [Explore the Live Deployment](https://insight-vault-demo.vercel.app/)
 
