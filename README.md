@@ -6,7 +6,7 @@ A full-stack personal finance intelligence platform for structured data manageme
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=header&text=InsightVault&fontSize=40&fontAlignY=35" />
 </p>
 
-<p>
+<p align="center">
 
 ![Node.js](https://img.shields.io/badge/Node.js-16a34a?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-1f2937?style=for-the-badge)
@@ -24,6 +24,21 @@ A full-stack personal finance intelligence platform for structured data manageme
 ![Status](https://img.shields.io/badge/Status-Active%20Dev-f59e0b?style=for-the-badge)
 
 </p>
+
+![Node.js](https://img.shields.io/badge/Node.js-22c55e?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-111827?style=for-the-badge)
+![SQLite](https://img.shields.io/badge/SQLite-0ea5e9?style=for-the-badge&logo=sqlite&logoColor=white)
+![Turso](https://img.shields.io/badge/Turso-14b8a6?style=for-the-badge)
+![JavaScript](https://img.shields.io/badge/JavaScript-facc15?style=for-the-badge&logo=javascript&logoColor=black)
+![Chart.js](https://img.shields.io/badge/Chart.js-f43f5e?style=for-the-badge)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-8b5cf6?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Frontend](https://img.shields.io/badge/Frontend-Vercel-000000?style=for-the-badge&logo=vercel)
+![Backend](https://img.shields.io/badge/Backend-Node.js-16a34a?style=for-the-badge)
+![Database](https://img.shields.io/badge/Database-Turso-06b6d4?style=for-the-badge)
+![Project](https://img.shields.io/badge/Project-FullStack-9333ea?style=for-the-badge)
+![API](https://img.shields.io/badge/API-REST-f97316?style=for-the-badge)
+![Visualization](https://img.shields.io/badge/Data-Visualization-e11d48?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active%20Dev-fbbf24?style=for-the-badge)
 
 ## Project Overview
 
