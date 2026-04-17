@@ -6,7 +6,7 @@ A full-stack personal finance intelligence platform for structured data manageme
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=header&text=InsightVault&fontSize=40&fontAlignY=35" />
 </p>
 
-<p align="center">
+<p>
 
 ![Node.js](https://img.shields.io/badge/Node.js-16a34a?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-1f2937?style=for-the-badge)
