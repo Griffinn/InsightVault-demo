@@ -473,122 +473,6 @@ let changeOverTimeChartInstance = null;
 
 let categoryChartInstance = null;
 
-/*
-function renderCategoryPieChart(data) {
-    const labels = data.map(item => item.category);
-    const totals = data.map(item => item.total);
-
-    const ctx = document.getElementById("categoryPieCanvas").getContext("2d");
-
-    if (categoryChartInstance) {
-        categoryChartInstance.destroy();
-    }
-
-    categoryChartInstance = new Chart(ctx, {
-        type: "bar",
-        data: {
-            labels: labels,
-            datasets: [
-                {
-                    data: totals,
-                    borderWidth: 1,
-                    backgroundColor: [
-                          "#FF6B6B", // Red-ish
-                          "#FF8E72", // Coral
-                          "#FFB56B", // Orange
-                          "#FFD93D", // Yellow
-                          "#6BCB77", // Green
-                          "#4D96FF", // Blue
-                          "#845EC2", // Purple
-                          "#FF63A5", // Pink
-                          "#00C9A7", // Teal
-                          "#FF9F1C", // Tangerine
-                          "#F15BB5", // Hot pink
-                          "#00BFFF", // Deep Sky Blue
-                          "#FF6F61", // Salmon
-                          "#8AC926", // Lime Green
-                          "#1982C4", // Strong Blue
-                          "#6A4C93", // Deep Purple
-                          "#FFBE0B", // Bright Yellow
-                          "#FF006E", // Vivid Pink
-                          "#06D6A0", // Aqua Green
-                          "#8338EC"  // Electric Purple
-                    ]
-                }
-            ]
-        },
-        options: {
-            responsive: true,
-            plugins: {
-                legend: {
-                    display: true,
-                    position: "right", // legend appears on the side
-                    labels: {
-                        boxWidth: 20,
-                        padding: 15,
-                    }
-                }
-            }
-        }
-    });
-}
-*/
-
-///-------------------------------------------------///
-///-----------BAR CHART----------------------------///
-///------------------------------------------------///
-
-
-// function renderCategoryPieChart(data) {
-//     const labels = data.map(item => item.category);
-//     const totals = data.map(item => item.total);
-
-//     const ctx = document.getElementById("categoryPieCanvas").getContext("2d");
-
-//     if (categoryChartInstance) {
-//         categoryChartInstance.destroy();
-//     }
-
-//     categoryChartInstance = new Chart(ctx, {
-//         type: "bar",
-//         data: {
-//             labels: labels,
-//             datasets: [
-//                 {
-//                     label: "Total Spending",   // 🔥 REQUIRED for legend
-//                     data: totals,
-//                     borderWidth: 1,
-//                     backgroundColor: [
-//                         "#FF6B6B", "#FF8E72", "#FFB56B", "#FFD93D",
-//                         "#6BCB77", "#4D96FF", "#845EC2", "#FF63A5",
-//                         "#00C9A7", "#FF9F1C", "#F15BB5", "#00BFFF",
-//                         "#FF6F61", "#8AC926", "#1982C4", "#6A4C93",
-//                         "#FFBE0B", "#FF006E", "#06D6A0", "#8338EC"
-//                     ]
-//                 }
-//             ]
-//         },
-//         options: {
-//             responsive: true,
-//             maintainAspectRatio: false,
-//             plugins: {
-//                 legend: {
-//                     display: true,
-//                     position: "right",
-//                     labels: {
-//                         boxWidth: 20,
-//                         padding: 15
-//                     }
-//                 }
-//             },
-//             scales: {
-//                 y: {
-//                     beginAtZero: true
-//                 }
-//             }
-//         }
-//     });
-// }
 
 
 function renderCategoryPieChart(data) {
@@ -727,8 +611,8 @@ document.addEventListener("DOMContentLoaded", async() => {
   fetchSummary();
   navbarOptionsHighlight();
 
-  // Fetch default “This Month” data immediately
-  const { startDate, endDate } = getDateRange("This Week");
+  // Fetch default “This Year” data immediately
+  const { startDate, endDate } = getDateRange("This Year");
   await fetchReportData(startDate, endDate);
 })
  

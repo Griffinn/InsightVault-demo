@@ -1,6 +1,11 @@
+/*To get the view at 80% zoom on chrome rather than 100% zoom*/
 body{
     font-family: sans-serif;                                /*Change later*/
     background-color: #F8FAFC;
+    zoom: 0.8; /* Works in Chrome, Edge, and Safari, To get the view at 80% zoom */ 
+    -moz-transform: scale(0.8); /* Firefox fallback */
+    -moz-transform-origin: 0 0;
+
 }
 
 .grid-container-1 {

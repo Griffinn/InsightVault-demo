@@ -1,3 +1,10 @@
+/*To get the view at 80% zoom on chrome rather than 100% zoom*/
+body {
+  zoom: 0.8; /* Works in Chrome, Edge, and Safari */
+  -moz-transform: scale(0.8); /* Firefox fallback */
+  -moz-transform-origin: 0 0;
+}
+
 body{
     font-family: sans-serif;                /*change later*/
     background-color: #F8FAFC;
@@ -419,8 +426,15 @@ h3{
   transition: all 0.2s ease;
   width: 100%;
 }
+
 .nav-active a {
   color: #444444; /* optional: a slightly stronger color */
   font-weight: 600;
+}
+
+/* Reports part */
+#graph-1 {
+    height: 300px;
+    position: relative;
 }
 

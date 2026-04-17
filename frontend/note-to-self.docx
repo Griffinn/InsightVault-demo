@@ -17,7 +17,7 @@
 17. Someday, probably never, make this with postresql
 18. yes in report page, summary should also have the csv download part
 19. also delete all aiscream stuff, test.html, format.html unnecessary comments, icons and commented out and unneeded code
-20. 80% VIEWWWWWW CHROME, THAT IS WHAT LOOKS GOOD, 100% LOOKS SO GIANT, WHAT DO I DO NOW GET HELPPPPP
+20. 80% VIEWWWWWW CHROME, THAT IS WHAT LOOKS GOOD, 100% LOOKS SO GIANT, WHAT DO I DO NOW GET HELPPPPP ✅
 21. Make the Transactions more real looking like, balance the expense and savings and income etc it's highly unbalanced
 22. Make the post panels for the goals one and the transactions one
 23. Finish the Dashboard, make the Graphs work please
@@ -34,6 +34,8 @@
 34. Add some curated font styles pleaseeee...
 35. Add a favicon
 36. All Amounts button on Transactions page
+37. Refactor the CSS
+38. Make it more modular, the whole multiple css and repetitive "template" of every HTML file, use EJS.
 ❤️
 ✅
 
