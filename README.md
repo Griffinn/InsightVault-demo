@@ -247,7 +247,7 @@ This project is currently in **Active Development (Beta)**.
 ### Desktop Dashboard
 
 ### Dashboard
-![Dashboard Overview](assets/Dashboard.png)
+![Dashboard Overview](assets/Dashboard2.png)
 *Main dashboard showing the transaction summary, quick navigation, and overall financial health at a glance.*
 
 ### Transactions
