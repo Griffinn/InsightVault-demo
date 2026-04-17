@@ -21,6 +21,7 @@ A full-stack personal finance intelligence platform for structured data manageme
 ![API](https://img.shields.io/badge/API-REST-f97316?style=for-the-badge)
 ![Visualization](https://img.shields.io/badge/Data-Visualization-be123c?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active%20Dev-f59e0b?style=for-the-badge)
+
 </p>
 
 ## Project Overview
