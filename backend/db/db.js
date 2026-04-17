@@ -20,6 +20,7 @@
 
 //#######updated code for Turso
 // backend/db/db.js
+import 'dotenv/config'
 import { createClient } from '@libsql/client'
 
 // No need for __dirname or path anymore because we aren't using a local file!

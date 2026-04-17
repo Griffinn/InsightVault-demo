@@ -1,3 +1,4 @@
+import 'dotenv/config'                                                                //to help run server locally while fetching the database from cloud on turso
 import express from 'express'
 import path from 'node:path'
 import { transactionsApiRouter } from './routes/transactionsApi.js'
@@ -7,7 +8,8 @@ import { dashboardApiRouter } from "./routes/dashboardApi.js"
 import { fileURLToPath } from 'node:url'
 
 // const PORT = 8000
-const PORT = process.env.PORT || 8000; //for render aaaa
+// Use the PORT from .env, or default to 8000
+const PORT = process.env.PORT || 8000;                                                //Also to run locally, while fetching data from turso
 const app = express()
 
 const __filename = fileURLToPath(import.meta.url)
@@ -31,10 +33,7 @@ app.use((req, res) => {
 });
  
 
-// app.listen(PORT, () => {
-//     console.log(`Server listening on port ${PORT}`)
-// })
-
-app.listen(PORT, '0.0.0.0', () => {
-    console.log(`Server is running on port ${PORT}`);
+// Start the server (Vercel ignores this, but it's vital for local testing)
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
 });
